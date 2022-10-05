@@ -1,0 +1,94 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 5rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.color-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.color-box {
+  position: relative;
+  background-color: blueviolet;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+}
+
+.close {
+  font-size: 2.4rem;
+  padding: 0.2rem;
+  border-radius: 4px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+  background-color: teal;
+}
+
+.name {
+  font-size: 3rem;
+}
+
+.form {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+.input {
+  width: 15rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+input[type="text"] {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input::placeholder {
+  font-size: 1.6rem;
+  opacity: 0.4;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.add {
+  padding: 0 3rem;
+}
+
+.btn-clear-all {
+  padding: 0 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+}
